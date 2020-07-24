@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loader /> render() renders com descrição 1`] = `
+<div
+  className="ui small segment "
+>
+  <div
+    className="ui active inverted dimmer"
+  >
+    <div
+      className="ui loader text undefined"
+    >
+      Carregando novo registro
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Loader /> render() renders sem texto 1`] = `
+<div
+  className="ui small segment "
+>
+  <div
+    className="ui active inverted dimmer"
+  >
+    <div
+      className="ui loader  undefined"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Loader /> render() renders the component 1`] = `
+<div
+  className="ui small segment "
+>
+  <div
+    className="ui active inverted dimmer"
+  >
+    <div
+      className="ui loader text undefined"
+    >
+      Carregando..
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> render() renders the component 1`] = `
+<div
+  className="form-group  col-xs-12 has-feedback "
+>
+  <label
+    className="control-label"
+  />
+  <input
+    className="form-control "
+    name="input_mock"
+    onChange={[MockFunction]}
+    props={
+      Object {
+        "descrition": "Campo de mock:",
+      }
+    }
+    value="Teste"
+  />
+</div>
+`;

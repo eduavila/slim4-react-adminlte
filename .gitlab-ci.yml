@@ -1,0 +1,35 @@
+stages:
+  - test
+
+# Variables
+variables:
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_USER: testdev
+  MYSQL_PASSWORD: teste@123
+  MYSQL_DATABASE: sge_test
+  DB_HOST: mysql
+
+# Speed up builds
+cache:
+  key: $CI_BUILD_REF_NAME # changed to $CI_COMMIT_REF_NAME in Gitlab 9.x
+  paths:
+    - vendor
+    - node_modules
+    - public
+    - .yarn
+
+test:
+  stage: test
+  services:
+    - mysql:5.7
+    - redis:latest
+  image: edbizarro/gitlab-ci-pipeline-php:7.3-alpine
+  script:
+    - composer install --prefer-dist --no-ansi --no-interaction --no-progress
+    - composer dumpautoload -o
+    - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
+  artifacts:
+    paths:
+      - ./storage/logs # for debugging
+    expire_in: 7 days
+    when: always

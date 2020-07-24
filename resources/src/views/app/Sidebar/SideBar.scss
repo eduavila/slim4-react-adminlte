@@ -1,0 +1,111 @@
+$sizeSidebar: 420px;
+
+
+.custom-sidebar{
+    .header-sidebar{
+        background-color: #ecf0f5;
+        height: 42px;
+        border-bottom: 1px solid #d2d6de;
+        position: relative;
+    }
+    .body-sidebar{
+        //padding:10px;
+        background-color: rgba(242,245,245,0.8);
+
+        .post{
+            padding: 10px;
+            margin-bottom: 0px;
+
+            .username{
+                font-weight: normal;
+            }
+        }
+    }
+    .close{
+        margin: 10px 24px 0 0;
+    }
+
+    .pop-sidebar-left{
+
+        z-index: 20000;
+       // padding-top: 50px;
+        padding-top: 0;
+        top:0px;
+        height: auto;
+        overflow: hidden;
+        display:  block;
+        position: absolute;
+        -webkit-transition: right .3s ease-in-out;
+        -o-transition: right .3s ease-in-out;
+        transition: right .3s ease-in-out;
+
+        .pop-siderbar-content{
+            background-color: #f9fafc;
+            position: fixed;
+            z-index: 20000;
+
+            border-radius: 3px;
+            background-color: #FFF;
+            border: 1px solid #d0d0d0;
+            -moz-box-shadow: -2px 0 15px rgba(0,0,0,0.14);
+            -webkit-box-shadow: -2px 0 15px rgba(0,0,0,0.14);
+            box-shadow: -2px 0 15px rgba(0,0,0,0.14);
+            //padding: 5px;
+
+            right: 10px;
+            @media (min-width: 992px) { 
+                right: $sizeSidebar;
+            }
+
+            width: 450px;
+            @media (max-width: 450px) { 
+                width: 100%;
+            }
+        }
+
+        .post{
+            padding:10px;
+        }
+    }
+    
+    .post{
+        position: relative;
+
+        &.active{
+            //border-left: 5px solid #3c8dbc.
+            &::after{
+                width: 5px;
+                content: '';
+                background-color: #3c8dbc;
+                height: 127px;
+                position: absolute;
+                height: 105px;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    
+        &.no-read{
+            background-color: #FFF;
+    
+            .user-block .username{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .loading-data{
+        position: relative;
+        height:80px;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.control-sidebar-bg.control-sidebar-open, .control-sidebar.control-sidebar-open{
+    width: $sizeSidebar;
+
+    @media (max-width: 450px) { 
+        width: 100%;
+    }
+}

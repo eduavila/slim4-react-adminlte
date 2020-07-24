@@ -1,0 +1,9 @@
+[program:queue-sge]
+process_name=%(program_name)s_%(process_num)02d
+command=php /var/www/sge/sge_api/src/app/cli.php RunQueue
+autostart=true
+autorestart=true
+user=apache
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/var/www/sge/sge_api/tmp/supervisord.log

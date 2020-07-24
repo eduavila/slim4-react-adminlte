@@ -1,0 +1,19 @@
+FROM node:12.18-alpine
+
+RUN apk update && apk upgrade && \
+    apk add --no-cache git
+
+RUN mkdir -p /code/resources
+
+WORKDIR /code/resources
+
+ADD . /code/resources
+
+RUN npm install -g -s --no-progress yarn && \
+    yarn && \
+    yarn run build && \
+    yarn cache clean
+
+CMD [ "yarn", "dev" ]
+
+EXPOSE 8081

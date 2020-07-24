@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checked /> render() renders the component 1`] = `
+<div
+  className="form-group  col-xs-12 has-feedback "
+>
+  <label
+    className="control-label"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  />
+  <Checkbox
+    checkboxClass="icheckbox_flat-blue"
+    checked={false}
+    className="form-control "
+    disabledClass="readonly"
+    id="checkbox1"
+    increaseArea="15%"
+    name="check_mock"
+    onChange={[Function]}
+    props={
+      Object {
+        "descrition": "Campo de mock:",
+      }
+    }
+    value={false}
+  />
+</div>
+`;

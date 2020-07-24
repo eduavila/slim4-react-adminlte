@@ -1,0 +1,75 @@
+.datatable{
+    width: 100%;
+    
+    .no-data-content{
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 400px;
+        text-align: center;
+
+        h2{
+            font-size: 1.1rem;
+        }
+    }
+
+    .table-responsive{
+        border:none !important;
+    }
+
+    .react-bootstrap-table-pagination{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .progress-bar span{
+        color:#373A3C;
+    }
+
+    .reset-expansion-style{
+        padding:0px;
+    }
+
+    // .expand-cell-header{
+    //     width: 40px !important;
+    // }
+    .expand-cell{
+        width: 40px !important;
+    }
+
+    .pagination>li>a{
+        padding: 1px 9px;
+    }
+    .row-action > div{
+        margin: 0px;
+    }
+    
+}
+
+.search-label{
+    width: 100%;
+}
+
+
+.col-fixed-left {
+    position: sticky !important;
+    left: 0;
+    z-index: 0;
+    background: white;
+}
+
+// TABLE VERYCONDESEND
+
+.table-sm>tbody>tr>td,.table-sm>tbody>tr>th,.table-sm>tfoot>tr>td,.table-sm>tfoot>tr>th,.table-sm>thead>tr>td,.table-sm>thead>tr>th {
+    padding: 3px;
+    font-size: 12px;
+}
+
+.table tbody{
+    tr > td{
+        position: relative;
+    }
+}
+
+.row-action > div{
+    margin-bottom: 0px;
+}

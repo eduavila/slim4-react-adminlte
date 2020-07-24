@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DatTable /> render() renders the component 1`] = `
+<div>
+  <Toolkitprovider
+    columns={
+      Array [
+        Object {
+          "dataField": "nome",
+          "headerStyle": Object {
+            "textAlign": "center",
+          },
+          "sort": true,
+          "style": Object {
+            "textAlign": "center",
+            "width": "50px",
+          },
+          "text": "Arquivo",
+        },
+        Object {
+          "dataField": "tarefa_id",
+          "headerStyle": Object {
+            "textAlign": "center",
+          },
+          "sort": true,
+          "style": Object {
+            "width": "100px",
+          },
+          "text": "Tarefa",
+        },
+      ]
+    }
+    data={Array []}
+    keyField="id"
+    search={
+      Object {
+        "onColumnMatch": [Function],
+      }
+    }
+  >
+    <Component />
+  </Toolkitprovider>
+  <p
+    className="text-center"
+  >
+     Nenhum registro. 
+  </p>
+</div>
+`;
