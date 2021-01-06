@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@fullcalendar/timegrid": "^4.4.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-mock-adapter": "^1.18.2",
     "babel-jest": "^26.1.0",
     "bootbox": "^5.4.0",
