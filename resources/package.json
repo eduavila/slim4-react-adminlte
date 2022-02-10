@@ -75,7 +75,7 @@
     "jodit-react": "^1.0.42",
     "js-file-download": "^0.4.10",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "query-string": "^6.12.1",
     "react": "^16.12.0",
     "react-bootstrap-table2-paginator": "^2.1.0",
